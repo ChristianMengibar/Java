@@ -1,0 +1,34 @@
+{
+	"name": "Mi tienda de juegos",
+	"catalog": [
+		{
+			"productId": 100,
+			"price": 22.50,
+			"name": "Monopoly",
+			"class":["Juego de mesa", "Estrategia"]
+		},
+		{
+			"productId": 101,
+			"price": 100.50,
+			"name": "Warcraft",
+			"class":["Videojuego", "Estrategia"]
+		}
+	],
+	"orders": [
+		{
+			"orderId": 100,
+			"date": "14/10/2021",
+			"price": 145.50,
+			"items": [
+				{
+					"productId":100,
+					"quantity": 2
+				},
+				{
+					"productId":101,
+					"quantity": 1
+				}
+			]
+		}
+	]
+}
