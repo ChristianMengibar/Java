@@ -1,0 +1,10 @@
+write to a file
+ write another line
+ write another line
+ write another line
+Michael
+Jhon
+David
+Angel
+Pedro
+Marcos
