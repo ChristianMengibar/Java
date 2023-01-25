@@ -1,0 +1,51 @@
+{
+  "address": "Avenida Lopez de Vega",
+  "municipality": "Leganes",
+  "apartments": [
+    {
+      "floorNumber": "4",
+      "doorLetter": "D",
+      "owners": [
+        {
+          "name":"Estela",
+          "surname": "Peralta"
+
+        },
+        {
+          "name":"Jose",
+          "surname": "Peralta"
+
+        }
+      ]
+
+    },
+    {
+      "floorNumber": "1",
+      "doorLetter": "A",
+      "owners": [
+        {
+          "name":"Maria",
+          "surname": "Nuñez"
+
+        },
+        {
+          "name":"Menez",
+          "surname": "Menezinni"
+
+        }
+      ]
+    },
+    {
+      "floorNumber": "6",
+      "doorLetter": "C",
+      "owners": [
+        {
+          "name":"Trevor",
+          "surname": "Blaine"
+        }
+
+      ]
+    }
+
+  ]
+}

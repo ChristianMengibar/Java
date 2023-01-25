@@ -1,0 +1,59 @@
+{
+  "name": "11BitStudios",
+  "departments":[
+    {
+      "departmentName": "Programing",
+      "employees": [
+        {
+          "nif": "6564545F",
+          "name": "Sergio",
+          "surname": "Gil",
+          "position": "Programmer"
+        },
+        {
+          "nif": "4654746F",
+          "name": "Jaime",
+          "surname": "Rodriguez",
+          "position": "Programmer"
+        }
+      ]
+    },
+    {
+      "departmentName": "Design",
+      "employees": [
+        {
+          "nif": "6564545F",
+          "name": "Alejandro",
+          "surname": "Pardal",
+          "position": "Programmer"
+        },
+        {
+          "nif": "4654746F",
+          "name": "Christian",
+          "surname": "Mengibar",
+          "position": "Programmer"
+        }
+      ]
+    },
+    {
+      "departmentName": "Story",
+      "employees": [
+        {
+          "nif": "236545F",
+          "name": "Michael",
+          "surname": "Ezeh",
+          "position": "Programmer"
+        },
+        {
+          "nif": "TQPJMNCS5",
+          "name": "Hideo",
+          "surname": "Kojima",
+          "position": "Programmer"
+        }
+      ]
+    }
+  ]
+
+
+
+}

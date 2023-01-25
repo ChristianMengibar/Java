@@ -1,0 +1,1230 @@
+2021-10-11 15:33:48 INFO  School.Company.Building.Iberia.Main:18 - {
+  "name": "IES Federica Montseny",
+  "groups": [
+    {
+      "title": "DAM",
+      "classRoomNumber": "2",
+      "classRoomLetter": "G",
+      "Students": [
+        {
+          "nif": "453264GH",
+          "name": "Michael",
+          "surname": "ezeh"
+
+        },
+        {
+          "nif": "5456453Z",
+          "name": "Christian",
+          "surname": "Mengibar"
+
+        },
+
+        {
+          "nif": "57486458P",
+          "name": "Sergio",
+          "surname": "Gil"
+
+        }
+
+      ]
+    }
+  ]
+}
+
+2021-10-11 15:54:24 ERROR School.Company.Building.Iberia.Main:32 - The json file is not well written
+com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of `School.School` (no Creators, like default constructor, exist): cannot deserialize from Object value (no delegate- or property-based Creator)
+ at [Source: (String)"{
+  "name": "IES Federica Montseny",
+  "groups": [
+    {
+      "title": "DAM",
+      "classRoomNumber": "2",
+      "classRoomLetter": "G",
+      "Students": [
+        {
+          "nif": "453264GH",
+          "name": "Michael",
+          "surname": "ezeh"
+
+        },
+        {
+          "nif": "5456453Z",
+          "name": "Christian",
+          "surname": "Mengibar"
+
+        },
+
+        {
+          "nif": "57486458P",
+          "name": "Sergio",
+          "surname": "Gil"
+
+        }
+
+      ]
+   "[truncated 9 chars]; line: 2, column: 3]
+	at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:67)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportBadDefinition(DeserializationContext.java:1764)
+	at com.fasterxml.jackson.databind.DatabindContext.reportBadDefinition(DatabindContext.java:400)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleMissingInstantiator(DeserializationContext.java:1209)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.deserializeFromObjectUsingNonDefault(BeanDeserializerBase.java:1415)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:362)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:195)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:322)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4593)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3548)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3516)
+	at School.Company.Building.Iberia.Main.main(School.Company.Building.Iberia.Main.java:22)
+2021-10-11 15:56:27 ERROR School.Company.Building.Iberia.Main:32 - The json file is not well written
+com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "Students" (class School.Group), not marked as ignorable (4 known properties: "title", "classRoomLetter", "classRoomNumber", "students"])
+ at [Source: (String)"{
+  "name": "IES Federica Montseny",
+  "groups": [
+    {
+      "title": "DAM",
+      "classRoomNumber": "2",
+      "classRoomLetter": "G",
+      "Students": [
+        {
+          "nif": "453264GH",
+          "name": "Michael",
+          "surname": "ezeh"
+
+        },
+        {
+          "nif": "5456453Z",
+          "name": "Christian",
+          "surname": "Mengibar"
+
+        },
+
+        {
+          "nif": "57486458P",
+          "name": "Sergio",
+          "surname": "Gil"
+
+        }
+
+      ]
+   "[truncated 9 chars]; line: 8, column: 20] (through reference chain: School.School["groups"]->java.util.ArrayList[0]->School.Group["Students"])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:987)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1974)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1701)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1679)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:330)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer._deserializeFromArray(CollectionDeserializer.java:355)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:244)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:28)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:129)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:324)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:322)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4593)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3548)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3516)
+	at School.Company.Building.Iberia.Main.main(School.Company.Building.Iberia.Main.java:22)
+2021-10-11 15:57:27 ERROR School.Company.Building.Iberia.Main:32 - The json file is not well written
+com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "School.Student" (class School.Group), not marked as ignorable (4 known properties: "title", "classRoomLetter", "classRoomNumber", "students"])
+ at [Source: (String)"{
+  "name": "IES Federica Montseny",
+  "groups": [
+    {
+      "title": "DAM",
+      "classRoomNumber": "2",
+      "classRoomLetter": "G",
+      "School.Student": [
+        {
+          "nif": "453264GH",
+          "name": "Michael",
+          "surname": "ezeh"
+
+        },
+        {
+          "nif": "5456453Z",
+          "name": "Christian",
+          "surname": "Mengibar"
+
+        },
+
+        {
+          "nif": "57486458P",
+          "name": "Sergio",
+          "surname": "Gil"
+
+        }
+
+      ]
+    "[truncated 8 chars]; line: 8, column: 19] (through reference chain: School.School["groups"]->java.util.ArrayList[0]->School.Group["School.Student"])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:987)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1974)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1701)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1679)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:330)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer._deserializeFromArray(CollectionDeserializer.java:355)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:244)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:28)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:129)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:324)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:322)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4593)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3548)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3516)
+	at School.Company.Building.Iberia.Main.main(School.Company.Building.Iberia.Main.java:22)
+2021-10-11 15:58:08 ERROR School.Company.Building.Iberia.Main:32 - The json file is not well written
+com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "student" (class School.Group), not marked as ignorable (4 known properties: "title", "classRoomLetter", "classRoomNumber", "students"])
+ at [Source: (String)"{
+  "name": "IES Federica Montseny",
+  "groups": [
+    {
+      "title": "DAM",
+      "classRoomNumber": "2",
+      "classRoomLetter": "G",
+      "student": [
+        {
+          "nif": "453264GH",
+          "name": "Michael",
+          "surname": "ezeh"
+
+        },
+        {
+          "nif": "5456453Z",
+          "name": "Christian",
+          "surname": "Mengibar"
+
+        },
+
+        {
+          "nif": "57486458P",
+          "name": "Sergio",
+          "surname": "Gil"
+
+        }
+
+      ]
+    "[truncated 8 chars]; line: 8, column: 19] (through reference chain: School.School["groups"]->java.util.ArrayList[0]->School.Group["student"])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:987)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1974)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1701)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1679)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:330)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer._deserializeFromArray(CollectionDeserializer.java:355)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:244)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:28)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:129)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:324)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:322)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4593)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3548)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3516)
+	at School.Company.Building.Iberia.Main.main(School.Company.Building.Iberia.Main.java:22)
+2021-10-11 16:00:50 ERROR School.Company.Building.Iberia.Main:32 - The json file is not well written
+com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "student" (class School.Group), not marked as ignorable (4 known properties: "title", "classRoomLetter", "classRoomNumber", "students"])
+ at [Source: (String)"{
+  "name": "IES Federica Montseny",
+  "groups": [
+    {
+      "title": "DAM",
+      "classRoomNumber": "2",
+      "classRoomLetter": "G",
+      "student": [
+        {
+          "nif": "453264GH",
+          "name": "Michael",
+          "surname": "ezeh"
+
+        },
+        {
+          "nif": "5456453Z",
+          "name": "Christian",
+          "surname": "Mengibar"
+
+        },
+
+        {
+          "nif": "57486458P",
+          "name": "Sergio",
+          "surname": "Gil"
+
+        }
+
+      ]
+    "[truncated 8 chars]; line: 8, column: 19] (through reference chain: School.School["groups"]->java.util.ArrayList[0]->School.Group["student"])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:987)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1974)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1701)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1679)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:330)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer._deserializeFromArray(CollectionDeserializer.java:355)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:244)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:28)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:129)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:324)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:322)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4593)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3548)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3516)
+	at School.Company.Building.Iberia.Main.main(School.Company.Building.Iberia.Main.java:22)
+2021-10-11 16:01:21 INFO  School.Company.Building.Iberia.Main:23 - School.School{name='IES Federica Montseny', groups=[School.Group{title='DAM', classRoomNumber=2, classRoomLetter='G', students=[School.Student{nif='453264GH', name='Michael', surname='ezeh'}, School.Student{nif='5456453Z', name='Christian', surname='Mengibar'}, School.Student{nif='57486458P', name='Sergio', surname='Gil'}]}]}
+2021-10-11 16:13:51 ERROR School.Company.Building.Iberia.Main:33 - The json file is not well written
+com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "students " (class School.Group), not marked as ignorable (4 known properties: "title", "classRoomLetter", "classRoomNumber", "students"])
+ at [Source: (String)"{
+  "name": "IES Federica Montseny",
+  "groups": [
+    {
+      "title": "DAM",
+      "classRoomNumber": "2",
+      "classRoomLetter": "G",
+      "students ": [
+        {
+          "nif": "453264GH",
+          "name": "Michael",
+          "surname": "ezeh"
+
+        },
+        {
+          "nif": "5456453Z",
+          "name": "Christian",
+          "surname": "Mengibar"
+
+        },
+
+        {
+          "nif": "57486458P",
+          "name": "Sergio",
+          "surname": "Gil"
+
+        }
+
+      ]
+  "[truncated 10 chars]; line: 8, column: 21] (through reference chain: School.School["groups"]->java.util.ArrayList[0]->School.Group["students "])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:987)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1974)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1701)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1679)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:330)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer._deserializeFromArray(CollectionDeserializer.java:355)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:244)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:28)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:129)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:324)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:322)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4593)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3548)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3516)
+	at School.Company.Building.Iberia.Main.main(School.Company.Building.Iberia.Main.java:22)
+2021-10-11 16:14:29 INFO  School.Company.Building.Iberia.Main:23 - School.School{name='IES Federica Montseny', groups=[School.Group{title='DAM', classRoomNumber=2, classRoomLetter='G', students=[School.Student{nif='453264GH', name='Michael', surname='ezeh'}, School.Student{nif='5456453Z', name='Christian', surname='Mengibar'}, School.Student{nif='57486458P', name='Sergio', surname='Gil'}]}]}
+2021-10-11 16:14:29 INFO  School.Company.Building.Iberia.Main:24 - School.Student{nif='453264GH', name='Michael', surname='ezeh'}
+2021-10-11 16:26:27 INFO  School.Company.Building.Iberia.Main:23 - School.School{name='IES Federica Montseny', groups=[School.Group{title='DAM', classRoomNumber=2, classRoomLetter='G', students=[School.Student{nif='453264GH', name='Michael', surname='ezeh'}, School.Student{nif='5456453Z', name='Christian', surname='Mengibar'}, School.Student{nif='57486458P', name='Sergio', surname='Gil'}]}]}
+2021-10-11 16:26:27 INFO  School.Company.Building.Iberia.Main:24 - School.Student{nif='453264GH', name='Michael', surname='ezeh'}
+2021-10-11 16:26:27 INFO  School.Company.Building.Iberia.Main:25 - {"name":"IES Federica Montseny","groups":[{"title":"DAM","classRoomNumber":2,"classRoomLetter":"G","students":[{"nif":"453264GH","name":"Michael","surname":"ezeh"},{"nif":"5456453Z","name":"Christian","surname":"Mengibar"},{"nif":"57486458P","name":"Sergio","surname":"Gil"}]}]}
+2021-10-11 16:33:22 INFO  School.Company.Building.Iberia.Main:26 - School.School{name='IES Federica Montseny', groups=[School.Group{title='DAM', classRoomNumber=2, classRoomLetter='G', students=[School.Student{nif='453264GH', name='Michael', surname='ezeh'}, School.Student{nif='5456453Z', name='Christian', surname='Mengibar'}, School.Student{nif='57486458P', name='Sergio', surname='Gil'}]}]}
+2021-10-11 16:33:22 INFO  School.Company.Building.Iberia.Main:27 - School.Student{nif='453264GH', name='Michael', surname='ezeh'}
+2021-10-11 16:33:22 INFO  School.Company.Building.Iberia.Main:28 - {"name":"IES Federica Montseny","groups":[{"title":"DAM","classRoomNumber":2,"classRoomLetter":"G","students":[{"nif":"453264GH","name":"Michael","surname":"ezeh"},{"nif":"5456453Z","name":"Christian","surname":"Mengibar"},{"nif":"57486458P","name":"Sergio","surname":"Gil"}]}]}
+2021-10-12 16:18:47 ERROR Company.Building.Iberia.Main:40 - com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of `Company.Company` (no Creators, like default constructor, exist): cannot deserialize from Object value (no delegate- or property-based Creator)
+ at [Source: (String)"{
+  "name": "11BitStudios",
+  "department":[
+    {
+      "departmentName": "Programing",
+      "employee": [
+        {
+          "nif": "6564545F",
+          "name": "Sergio",
+          "surname": "Gil",
+          "position": "Programmer"
+        },
+        {
+          "nif": "4654746F",
+          "name": "Jaime",
+          "surname": "Rodriguez",
+          "position": "Programmer"
+        }
+      ]
+    },
+    {
+      "departmentName": "Design",
+      "employee": [
+        {
+          "nif": "65"[truncated 647 chars]; line: 2, column: 3]
+2021-10-12 16:20:07 ERROR Company.Building.Iberia.Main:40 - com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "department" (class Company.Company), not marked as ignorable (2 known properties: "departments", "name"])
+ at [Source: (String)"{
+  "name": "11BitStudios",
+  "department":[
+    {
+      "departmentName": "Programing",
+      "employee": [
+        {
+          "nif": "6564545F",
+          "name": "Sergio",
+          "surname": "Gil",
+          "position": "Programmer"
+        },
+        {
+          "nif": "4654746F",
+          "name": "Jaime",
+          "surname": "Rodriguez",
+          "position": "Programmer"
+        }
+      ]
+    },
+    {
+      "departmentName": "Design",
+      "employee": [
+        {
+          "nif": "65"[truncated 647 chars]; line: 3, column: 17] (through reference chain: Company.Company["department"])
+2021-10-12 16:20:23 ERROR Company.Building.Iberia.Main:40 - com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "department" (class Company.Company), not marked as ignorable (2 known properties: "departments", "name"])
+ at [Source: (String)"{
+  "name": "11BitStudios",
+  "department":[
+    {
+      "departmentName": "Programing",
+      "employee": [
+        {
+          "nif": "6564545F",
+          "name": "Sergio",
+          "surname": "Gil",
+          "position": "Programmer"
+        },
+        {
+          "nif": "4654746F",
+          "name": "Jaime",
+          "surname": "Rodriguez",
+          "position": "Programmer"
+        }
+      ]
+    },
+    {
+      "departmentName": "Design",
+      "employee": [
+        {
+          "nif": "65"[truncated 647 chars]; line: 3, column: 17] (through reference chain: Company.Company["department"])
+2021-10-12 16:23:47 ERROR Company.Building.Iberia.Main:40 - com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "department" (class Company.Company), not marked as ignorable (2 known properties: "departments", "name"])
+ at [Source: (String)"{
+  "name": "11BitStudios",
+  "department":[
+    {
+      "departmentName": "Programing",
+      "employee": [
+        {
+          "nif": "6564545F",
+          "name": "Sergio",
+          "surname": "Gil",
+          "position": "Programmer"
+        },
+        {
+          "nif": "4654746F",
+          "name": "Jaime",
+          "surname": "Rodriguez",
+          "position": "Programmer"
+        }
+      ]
+    },
+    {
+      "departmentName": "Design",
+      "employee": [
+        {
+          "nif": "65"[truncated 647 chars]; line: 3, column: 17] (through reference chain: Company.Company["department"])
+2021-10-12 16:27:33 ERROR Company.Building.Iberia.Main:40 - com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "department" (class Company.Company), not marked as ignorable (2 known properties: "departments", "name"])
+ at [Source: (String)"{
+  "name": "11BitStudios",
+  "department":[
+    {
+      "departmentName": "Programing",
+      "employee": [
+        {
+          "nif": "6564545F",
+          "name": "Sergio",
+          "surname": "Gil",
+          "position": "Programmer"
+        },
+        {
+          "nif": "4654746F",
+          "name": "Jaime",
+          "surname": "Rodriguez",
+          "position": "Programmer"
+        }
+      ]
+    },
+    {
+      "departmentName": "Design",
+      "employee": [
+        {
+          "nif": "65"[truncated 647 chars]; line: 3, column: 17] (through reference chain: Company.Company["department"])
+2021-10-12 16:32:26 ERROR Company.Building.Iberia.Main:40 - com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "department" (class Company.Company), not marked as ignorable (2 known properties: "departments", "name"])
+ at [Source: (String)"{
+  "name": "11BitStudios",
+  "department":[
+    {
+      "departmentName": "Programing",
+      "employees": [
+        {
+          "nif": "6564545F",
+          "name": "Sergio",
+          "surname": "Gil",
+          "position": "Programmer"
+        },
+        {
+          "nif": "4654746F",
+          "name": "Jaime",
+          "surname": "Rodriguez",
+          "position": "Programmer"
+        }
+      ]
+    },
+    {
+      "departmentName": "Design",
+      "employees": [
+        {
+          "nif": ""[truncated 650 chars]; line: 3, column: 17] (through reference chain: Company.Company["department"])
+2021-10-12 16:32:45 INFO  Company.Building.Iberia.Main:31 - Company.Company{name='11BitStudios', departments=[Company.Department{departmentName='Programing', employees=[Company.Employee{nif='6564545F', name='Sergio', surname='Gil', position='Programmer'}, Company.Employee{nif='4654746F', name='Jaime', surname='Rodriguez', position='Programmer'}]}, Company.Department{departmentName='Design', employees=[Company.Employee{nif='6564545F', name='Alejandro', surname='Pardal', position='Programmer'}, Company.Employee{nif='4654746F', name='Christian', surname='Mengibar', position='Programmer'}]}, Company.Department{departmentName='Story', employees=[Company.Employee{nif='236545F', name='Michael', surname='Ezeh', position='Programmer'}, Company.Employee{nif='TQPJMNCS5', name='Hideo', surname='Kojima', position='Programmer'}]}]}
+2021-10-12 19:24:13 INFO  Company.Building.Iberia.Main:31 - Company.Company{name='11BitStudios', departments=[Company.Department{departmentName='Programing', employees=[Company.Employee{nif='6564545F', name='Sergio', surname='Gil', position='Programmer'}, Company.Employee{nif='4654746F', name='Jaime', surname='Rodriguez', position='Programmer'}]}, Company.Department{departmentName='Design', employees=[Company.Employee{nif='6564545F', name='Alejandro', surname='Pardal', position='Programmer'}, Company.Employee{nif='4654746F', name='Christian', surname='Mengibar', position='Programmer'}]}, Company.Department{departmentName='Story', employees=[Company.Employee{nif='236545F', name='Michael', surname='Ezeh', position='Programmer'}, Company.Employee{nif='TQPJMNCS5', name='Hideo', surname='Kojima', position='Programmer'}]}]}
+2021-10-12 19:24:13 INFO  Company.Building.Iberia.Main:33 - [Company.Employee{nif='6564545F', name='Sergio', surname='Gil', position='Programmer'}, Company.Employee{nif='4654746F', name='Jaime', surname='Rodriguez', position='Programmer'}]
+2021-10-12 19:40:12 INFO  Company.Building.Iberia.Main:32 - Company.Company{name='11BitStudios', departments=[Company.Department{departmentName='Programing', employees=[Company.Employee{nif='6564545F', name='Sergio', surname='Gil', position='Programmer'}, Company.Employee{nif='4654746F', name='Jaime', surname='Rodriguez', position='Programmer'}]}, Company.Department{departmentName='Design', employees=[Company.Employee{nif='6564545F', name='Alejandro', surname='Pardal', position='Programmer'}, Company.Employee{nif='4654746F', name='Christian', surname='Mengibar', position='Programmer'}]}, Company.Department{departmentName='Story', employees=[Company.Employee{nif='236545F', name='Michael', surname='Ezeh', position='Programmer'}, Company.Employee{nif='TQPJMNCS5', name='Hideo', surname='Kojima', position='Programmer'}]}]}
+2021-10-12 19:40:12 INFO  Company.Building.Iberia.Main:34 - [Company.Employee{nif='6564545F', name='Sergio', surname='Gil', position='Programmer'}, Company.Employee{nif='4654746F', name='Jaime', surname='Rodriguez', position='Programmer'}]
+2021-10-12 19:43:25 INFO  Company.Building.Iberia.Main:32 - Company.Company{name='11BitStudios', departments=[Company.Department{departmentName='Programing', employees=[Company.Employee{nif='6564545F', name='Sergio', surname='Gil', position='Programmer'}, Company.Employee{nif='4654746F', name='Jaime', surname='Rodriguez', position='Programmer'}]}, Company.Department{departmentName='Design', employees=[Company.Employee{nif='6564545F', name='Alejandro', surname='Pardal', position='Programmer'}, Company.Employee{nif='4654746F', name='Christian', surname='Mengibar', position='Programmer'}]}, Company.Department{departmentName='Story', employees=[Company.Employee{nif='236545F', name='Michael', surname='Ezeh', position='Programmer'}, Company.Employee{nif='TQPJMNCS5', name='Hideo', surname='Kojima', position='Programmer'}]}]}
+2021-10-12 19:43:25 INFO  Company.Building.Iberia.Main:34 - [Company.Employee{nif='6564545F', name='Sergio', surname='Gil', position='Programmer'}, Company.Employee{nif='4654746F', name='Jaime', surname='Rodriguez', position='Programmer'}]
+2021-10-12 19:44:47 INFO  Company.Building.Iberia.Main:32 - Company.Company{name='11BitStudios', departments=[Company.Department{departmentName='Programing', employees=[Company.Employee{nif='6564545F', name='Sergio', surname='Gil', position='Programmer'}, Company.Employee{nif='4654746F', name='Jaime', surname='Rodriguez', position='Programmer'}]}, Company.Department{departmentName='Design', employees=[Company.Employee{nif='6564545F', name='Alejandro', surname='Pardal', position='Programmer'}, Company.Employee{nif='4654746F', name='Christian', surname='Mengibar', position='Programmer'}]}, Company.Department{departmentName='Story', employees=[Company.Employee{nif='236545F', name='Michael', surname='Ezeh', position='Programmer'}, Company.Employee{nif='TQPJMNCS5', name='Hideo', surname='Kojima', position='Programmer'}]}]}
+2021-10-12 19:44:47 INFO  Company.Building.Iberia.Main:34 - [Company.Employee{nif='6564545F', name='Sergio', surname='Gil', position='Programmer'}, Company.Employee{nif='4654746F', name='Jaime', surname='Rodriguez', position='Programmer'}]
+2021-10-12 19:47:03 INFO  Company.Building.Iberia.Main:33 - Company.Company{name='11BitStudios', departments=[Company.Department{departmentName='Programing', employees=[Company.Employee{nif='6564545F', name='Sergio', surname='Gil', position='Programmer'}, Company.Employee{nif='4654746F', name='Jaime', surname='Rodriguez', position='Programmer'}]}, Company.Department{departmentName='Design', employees=[Company.Employee{nif='6564545F', name='Alejandro', surname='Pardal', position='Programmer'}, Company.Employee{nif='4654746F', name='Christian', surname='Mengibar', position='Programmer'}]}, Company.Department{departmentName='Story', employees=[Company.Employee{nif='236545F', name='Michael', surname='Ezeh', position='Programmer'}, Company.Employee{nif='TQPJMNCS5', name='Hideo', surname='Kojima', position='Programmer'}]}]}
+2021-10-12 19:47:03 INFO  Company.Building.Iberia.Main:35 - [Company.Employee{nif='6564545F', name='Sergio', surname='Gil', position='Programmer'}, Company.Employee{nif='4654746F', name='Jaime', surname='Rodriguez', position='Programmer'}]
+2021-10-12 19:49:25 INFO  Company.Building.Iberia.Main:33 - Company.Company{name='11BitStudios', departments=[Company.Department{departmentName='Programing', employees=[Company.Employee{nif='6564545F', name='Sergio', surname='Gil', position='Programmer'}, Company.Employee{nif='4654746F', name='Jaime', surname='Rodriguez', position='Programmer'}]}, Company.Department{departmentName='Design', employees=[Company.Employee{nif='6564545F', name='Alejandro', surname='Pardal', position='Programmer'}, Company.Employee{nif='4654746F', name='Christian', surname='Mengibar', position='Programmer'}]}, Company.Department{departmentName='Story', employees=[Company.Employee{nif='236545F', name='Michael', surname='Ezeh', position='Programmer'}, Company.Employee{nif='TQPJMNCS5', name='Hideo', surname='Kojima', position='Programmer'}]}]}
+2021-10-12 19:49:25 INFO  Company.Building.Iberia.Main:35 - [Company.Employee{nif='6564545F', name='Sergio', surname='Gil', position='Programmer'}, Company.Employee{nif='4654746F', name='Jaime', surname='Rodriguez', position='Programmer'}]
+2021-10-12 19:50:07 INFO  Company.Building.Iberia.Main:33 - Company.Company{name='11BitStudios', departments=[Company.Department{departmentName='Programing', employees=[Company.Employee{nif='6564545F', name='Sergio', surname='Gil', position='Programmer'}, Company.Employee{nif='4654746F', name='Jaime', surname='Rodriguez', position='Programmer'}]}, Company.Department{departmentName='Design', employees=[Company.Employee{nif='6564545F', name='Alejandro', surname='Pardal', position='Programmer'}, Company.Employee{nif='4654746F', name='Christian', surname='Mengibar', position='Programmer'}]}, Company.Department{departmentName='Story', employees=[Company.Employee{nif='236545F', name='Michael', surname='Ezeh', position='Programmer'}, Company.Employee{nif='TQPJMNCS5', name='Hideo', surname='Kojima', position='Programmer'}]}]}
+2021-10-12 19:50:07 INFO  Company.Building.Iberia.Main:35 - [Company.Employee{nif='6564545F', name='Sergio', surname='Gil', position='Programmer'}, Company.Employee{nif='4654746F', name='Jaime', surname='Rodriguez', position='Programmer'}]
+2021-10-12 19:54:40 INFO  Company.Building.Iberia.Main:33 - Company.Company{name='11BitStudios', departments=[Company.Department{departmentName='Programing', employees=[Company.Employee{nif='6564545F', name='Sergio', surname='Gil', position='Programmer'}, Company.Employee{nif='4654746F', name='Jaime', surname='Rodriguez', position='Programmer'}]}, Company.Department{departmentName='Design', employees=[Company.Employee{nif='6564545F', name='Alejandro', surname='Pardal', position='Programmer'}, Company.Employee{nif='4654746F', name='Christian', surname='Mengibar', position='Programmer'}]}, Company.Department{departmentName='Story', employees=[Company.Employee{nif='236545F', name='Michael', surname='Ezeh', position='Programmer'}, Company.Employee{nif='TQPJMNCS5', name='Hideo', surname='Kojima', position='Programmer'}]}]}
+2021-10-12 19:54:40 INFO  Company.Building.Iberia.Main:35 - [Company.Employee{nif='6564545F', name='Sergio', surname='Gil', position='Programmer'}, Company.Employee{nif='4654746F', name='Jaime', surname='Rodriguez', position='Programmer'}]
+2021-10-12 19:57:14 ERROR Company.Building.Iberia.Main:49 - com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "employee" (class Company.Department), not marked as ignorable (2 known properties: "departmentName", "employees"])
+ at [Source: (String)"{
+  "name": "11BitStudios",
+  "departments":[
+    {
+      "departmentName": "Programing",
+      "employee": [
+        {
+          "nif": "6564545F",
+          "name": "Sergio",
+          "surname": "Gil",
+          "position": "Programmer"
+        },
+        {
+          "nif": "4654746F",
+          "name": "Jaime",
+          "surname": "Rodriguez",
+          "position": "Programmer"
+        }
+      ]
+    },
+    {
+      "departmentName": "Design",
+      "employees": [
+        {
+          "nif": ""[truncated 650 chars]; line: 6, column: 20] (through reference chain: Company.Company["departments"]->java.util.ArrayList[0]->Company.Department["employee"])
+2021-10-12 19:57:54 ERROR Company.Building.Iberia.Main:49 - com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "employee" (class Company.Department), not marked as ignorable (2 known properties: "departmentName", "employees"])
+ at [Source: (String)"{
+  "name": "11BitStudios",
+  "departments":[
+    {
+      "departmentName": "Programing",
+      "employee": [
+        {
+          "nif": "6564545F",
+          "name": "Sergio",
+          "surname": "Gil",
+          "position": "Programmer"
+        },
+        {
+          "nif": "4654746F",
+          "name": "Jaime",
+          "surname": "Rodriguez",
+          "position": "Programmer"
+        }
+      ]
+    },
+    {
+      "departmentName": "Design",
+      "employees": [
+        {
+          "nif": ""[truncated 650 chars]; line: 6, column: 20] (through reference chain: Company.Company["departments"]->java.util.ArrayList[0]->Company.Department["employee"])
+2021-10-12 19:58:11 INFO  Company.Building.Iberia.Main:33 - Company.Company{name='11BitStudios', departments=[Company.Department{departmentName='Programing', employees=[Company.Employee{nif='6564545F', name='Sergio', surname='Gil', position='Programmer'}, Company.Employee{nif='4654746F', name='Jaime', surname='Rodriguez', position='Programmer'}]}, Company.Department{departmentName='Design', employees=[Company.Employee{nif='6564545F', name='Alejandro', surname='Pardal', position='Programmer'}, Company.Employee{nif='4654746F', name='Christian', surname='Mengibar', position='Programmer'}]}, Company.Department{departmentName='Story', employees=[Company.Employee{nif='236545F', name='Michael', surname='Ezeh', position='Programmer'}, Company.Employee{nif='TQPJMNCS5', name='Hideo', surname='Kojima', position='Programmer'}]}]}
+2021-10-12 19:58:11 INFO  Company.Building.Iberia.Main:35 - [Company.Employee{nif='6564545F', name='Sergio', surname='Gil', position='Programmer'}, Company.Employee{nif='4654746F', name='Jaime', surname='Rodriguez', position='Programmer'}]
+2021-10-12 20:46:15 INFO  Building.Iberia.Main:35 - Company.Company{name='11BitStudios', departments=[Company.Department{departmentName='Programing', employees=[Company.Employee{nif='6564545F', name='Sergio', surname='Gil', position='Programmer'}, Company.Employee{nif='4654746F', name='Jaime', surname='Rodriguez', position='Programmer'}]}, Company.Department{departmentName='Design', employees=[Company.Employee{nif='6564545F', name='Alejandro', surname='Pardal', position='Programmer'}, Company.Employee{nif='4654746F', name='Christian', surname='Mengibar', position='Programmer'}]}, Company.Department{departmentName='Story', employees=[Company.Employee{nif='236545F', name='Michael', surname='Ezeh', position='Programmer'}, Company.Employee{nif='TQPJMNCS5', name='Hideo', surname='Kojima', position='Programmer'}]}]}
+2021-10-12 20:46:15 INFO  Building.Iberia.Main:37 - [Company.Employee{nif='6564545F', name='Sergio', surname='Gil', position='Programmer'}, Company.Employee{nif='4654746F', name='Jaime', surname='Rodriguez', position='Programmer'}]
+2021-10-12 20:46:39 ERROR Building.Building:38 - com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'Buildin': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"Buildin.json"; line: 1, column: 8]
+2021-10-12 20:47:35 ERROR Building.Building:38 - com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'Building.Building': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"Building.Building.json"; line: 1, column: 9]
+2021-10-12 20:48:17 INFO  Building.Building:30 - {
+  "address": "Avenida Lopez de Vega",
+  "municipality": "Leganes",
+  "apartments": [
+    {
+      "floorNumber": "4",
+      "doorLetter": "D",
+      "owners": [
+        {
+          "name":"Estela",
+          "surname": "Peralta"
+
+        },
+        {
+          "name":"Jose",
+          "surname": "Peralta"
+
+        }
+      ]
+
+    },
+    {
+      "floorNumber": "2",
+      "doorLetter": "A",
+      "owners": [
+        {
+          "name":"Maria",
+          "surname": "Nuñez"
+
+        },
+        {
+          "name":"Menez",
+          "surname": "Menezinni"
+
+        }
+      ]
+    },
+    {
+      "floorNumber": "6",
+      "doorLetter": "C",
+      "owners": [
+        {
+          "name":"Trevor",
+          "surname": "Blaine"
+        }
+
+      ]
+    }
+
+  ]
+}
+
+2021-10-12 20:48:17 INFO  Building.Building:31 - Building.Building{address='Avenida Lopez de Vega', municipality='Leganes', apartments=[Building.Apartment{floorNumber='4', doorLetter='D', owners=[Building.Owner{name='Estela', surname='Peralta'}, Building.Owner{name='Jose', surname='Peralta'}]}, Building.Apartment{floorNumber='2', doorLetter='A', owners=[Building.Owner{name='Maria', surname='Nuñez'}, Building.Owner{name='Menez', surname='Menezinni'}]}, Building.Apartment{floorNumber='6', doorLetter='C', owners=[Building.Owner{name='Trevor', surname='Blaine'}]}]}
+2021-10-12 21:01:58 INFO  Building.Building:28 - {
+  "address": "Avenida Lopez de Vega",
+  "municipality": "Leganes",
+  "apartments": [
+    {
+      "floorNumber": "4",
+      "doorLetter": "D",
+      "owners": [
+        {
+          "name":"Estela",
+          "surname": "Peralta"
+
+        },
+        {
+          "name":"Jose",
+          "surname": "Peralta"
+
+        }
+      ]
+
+    },
+    {
+      "floorNumber": "1",
+      "doorLetter": "A",
+      "owners": [
+        {
+          "name":"Maria",
+          "surname": "Nuñez"
+
+        },
+        {
+          "name":"Menez",
+          "surname": "Menezinni"
+
+        }
+      ]
+    },
+    {
+      "floorNumber": "6",
+      "doorLetter": "C",
+      "owners": [
+        {
+          "name":"Trevor",
+          "surname": "Blaine"
+        }
+
+      ]
+    }
+
+  ]
+}
+
+2021-10-12 21:01:58 INFO  Building.Building:32 - Building.Building{address='Avenida Lopez de Vega', municipality='Leganes', apartments=[Building.Apartment{floorNumber='4', doorLetter='D', owners=[Building.Owner{name='Estela', surname='Peralta'}, Building.Owner{name='Jose', surname='Peralta'}]}, Building.Apartment{floorNumber='1', doorLetter='A', owners=[Building.Owner{name='Maria', surname='Nuñez'}, Building.Owner{name='Menez', surname='Menezinni'}]}, Building.Apartment{floorNumber='6', doorLetter='C', owners=[Building.Owner{name='Trevor', surname='Blaine'}]}]}
+2021-10-12 21:01:58 INFO  Building.Building:34 - [Building.Owner{name='Maria', surname='Nuñez'}, Building.Owner{name='Menez', surname='Menezinni'}]
+2021-10-12 21:06:30 INFO  Building.Building:29 - {
+  "address": "Avenida Lopez de Vega",
+  "municipality": "Leganes",
+  "apartments": [
+    {
+      "floorNumber": "4",
+      "doorLetter": "D",
+      "owners": [
+        {
+          "name":"Estela",
+          "surname": "Peralta"
+
+        },
+        {
+          "name":"Jose",
+          "surname": "Peralta"
+
+        }
+      ]
+
+    },
+    {
+      "floorNumber": "1",
+      "doorLetter": "A",
+      "owners": [
+        {
+          "name":"Maria",
+          "surname": "Nuñez"
+
+        },
+        {
+          "name":"Menez",
+          "surname": "Menezinni"
+
+        }
+      ]
+    },
+    {
+      "floorNumber": "6",
+      "doorLetter": "C",
+      "owners": [
+        {
+          "name":"Trevor",
+          "surname": "Blaine"
+        }
+
+      ]
+    }
+
+  ]
+}
+
+2021-10-12 21:06:30 INFO  Building.Building:33 - Building.Building{address='Avenida Lopez de Vega', municipality='Leganes', apartments=[Building.Apartment{floorNumber='4', doorLetter='D', owners=[Building.Owner{name='Estela', surname='Peralta'}, Building.Owner{name='Jose', surname='Peralta'}]}, Building.Apartment{floorNumber='1', doorLetter='A', owners=[Building.Owner{name='Maria', surname='Nuñez'}, Building.Owner{name='Menez', surname='Menezinni'}]}, Building.Apartment{floorNumber='6', doorLetter='C', owners=[Building.Owner{name='Trevor', surname='Blaine'}]}]}
+2021-10-12 21:06:30 INFO  Building.Building:35 - [Building.Owner{name='Maria', surname='Nuñez'}, Building.Owner{name='Menez', surname='Menezinni'}]
+2021-10-12 21:08:18 INFO  Building.Iberia.Main:36 - Company.Company{name='11BitStudios', departments=[Company.Department{departmentName='Programing', employees=[Company.Employee{nif='6564545F', name='Sergio', surname='Gil', position='Programmer'}, Company.Employee{nif='4654746F', name='Jaime', surname='Rodriguez', position='Programmer'}]}, Company.Department{departmentName='Design', employees=[Company.Employee{nif='6564545F', name='Alejandro', surname='Pardal', position='Programmer'}, Company.Employee{nif='4654746F', name='Christian', surname='Mengibar', position='Programmer'}]}, Company.Department{departmentName='Story', employees=[Company.Employee{nif='236545F', name='Michael', surname='Ezeh', position='Programmer'}, Company.Employee{nif='TQPJMNCS5', name='Hideo', surname='Kojima', position='Programmer'}]}]}
+2021-10-12 21:08:18 INFO  Building.Iberia.Main:38 - [Company.Employee{nif='6564545F', name='Sergio', surname='Gil', position='Programmer'}, Company.Employee{nif='4654746F', name='Jaime', surname='Rodriguez', position='Programmer'}]
+2021-10-12 21:44:16 ERROR Iberia.Main:43 - com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of `Iberia.Airline` (no Creators, like default constructor, exist): cannot deserialize from Object value (no delegate- or property-based Creator)
+ at [Source: (String)"{
+	
+	"name": "Iberia",
+	"flights": [
+		{
+			"number": 23432543,
+			"origin": "Madrid",
+			"destination": "Londres",
+			"date": "24/10/2021",
+			"passengers": [
+				{
+					"nif": "2342343",
+					"flightClass": "tourist",
+					"seat": 34
+				},
+				{
+					"nif": "2342343",
+					"flightClass": "business",
+					"seat": 10
+				}
+			]
+		},
+		{
+			"number": 23432555,
+			"origin": "Londres",
+			"destination": "Madrid",
+			"date": "28/10/2021",
+			"passengers": [
+				{
+					"nif": "2342343",
+					"flight"[truncated 140 chars]; line: 3, column: 2]
+2021-10-12 21:45:12 ERROR Iberia.Main:43 - com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.util.Date` from String "24/10/2021": not a valid representation (error: Failed to parse Date value '24/10/2021': Cannot parse date "24/10/2021": not compatible with any of standard forms ("yyyy-MM-dd'T'HH:mm:ss.SSSX", "yyyy-MM-dd'T'HH:mm:ss.SSS", "EEE, dd MMM yyyy HH:mm:ss zzz", "yyyy-MM-dd"))
+ at [Source: (String)"{
+	
+	"name": "Iberia",
+	"flights": [
+		{
+			"number": 23432543,
+			"origin": "Madrid",
+			"destination": "Londres",
+			"date": "24/10/2021",
+			"passengers": [
+				{
+					"nif": "2342343",
+					"flightClass": "tourist",
+					"seat": 34
+				},
+				{
+					"nif": "2342343",
+					"flightClass": "business",
+					"seat": 10
+				}
+			]
+		},
+		{
+			"number": 23432555,
+			"origin": "Londres",
+			"destination": "Madrid",
+			"date": "28/10/2021",
+			"passengers": [
+				{
+					"nif": "2342343",
+					"flight"[truncated 140 chars]; line: 9, column: 12] (through reference chain: Iberia.Airline["flights"]->java.util.ArrayList[0]->Iberia.Flight["date"])
+2021-10-12 21:46:18 ERROR Iberia.Main:43 - com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.util.Date` from String "24-10-2021": not a valid representation (error: Failed to parse Date value '24-10-2021': Cannot parse date "24-10-2021": not compatible with any of standard forms ("yyyy-MM-dd'T'HH:mm:ss.SSSX", "yyyy-MM-dd'T'HH:mm:ss.SSS", "EEE, dd MMM yyyy HH:mm:ss zzz", "yyyy-MM-dd"))
+ at [Source: (String)"{
+	
+	"name": "Iberia",
+	"flights": [
+		{
+			"number": 23432543,
+			"origin": "Madrid",
+			"destination": "Londres",
+			"date": "24-10-2021",
+			"passengers": [
+				{
+					"nif": "2342343",
+					"flightClass": "tourist",
+					"seat": 34
+				},
+				{
+					"nif": "2342343",
+					"flightClass": "business",
+					"seat": 10
+				}
+			]
+		},
+		{
+			"number": 23432555,
+			"origin": "Londres",
+			"destination": "Madrid",
+			"date": "28-10-2021",
+			"passengers": [
+				{
+					"nif": "2342343",
+					"flight"[truncated 140 chars]; line: 9, column: 12] (through reference chain: Iberia.Airline["flights"]->java.util.ArrayList[0]->Iberia.Flight["date"])
+2021-10-12 21:48:06 INFO  Iberia.Main:31 - Iberia.Airline{name='Iberia', flights=[Iberia.Flight{number=23432543, origin='Madrid', destination='Londres', date=Sun Oct 24 02:00:00 CEST 2021, passengers=[Iberia.Passenger{nif='2342343', flightClass='tourist', seat='34'}, Iberia.Passenger{nif='2342343', flightClass='business', seat='10'}]}, Iberia.Flight{number=23432555, origin='Londres', destination='Madrid', date=Thu Oct 28 02:00:00 CEST 2021, passengers=[Iberia.Passenger{nif='2342343', flightClass='tourist', seat='34'}, Iberia.Passenger{nif='2342343', flightClass='business', seat='10'}]}]}
+2021-10-12 21:48:38 INFO  Iberia.Main:31 - {
+	
+	"name": "Iberia",
+	"flights": [
+		{
+			"number": 23432543,
+			"origin": "Madrid",
+			"destination": "Londres",
+			"date": "2021-10-24",
+			"passengers": [
+				{
+					"nif": "2342343",
+					"flightClass": "tourist",
+					"seat": 34
+				},
+				{
+					"nif": "2342343",
+					"flightClass": "business",
+					"seat": 10
+				}
+			]
+		},
+		{
+			"number": 23432555,
+			"origin": "Londres",
+			"destination": "Madrid",
+			"date": "2021-10-28",
+			"passengers": [
+				{
+					"nif": "2342343",
+					"flightClass": "tourist",
+					"seat": 34
+				},
+				{
+					"nif": "2342343",
+					"flightClass": "business",
+					"seat": 10
+				}
+			]
+		}
+	] 
+}
+
+2021-10-12 21:48:38 INFO  Iberia.Main:33 - Iberia.Airline{name='Iberia', flights=[Iberia.Flight{number=23432543, origin='Madrid', destination='Londres', date=Sun Oct 24 02:00:00 CEST 2021, passengers=[Iberia.Passenger{nif='2342343', flightClass='tourist', seat='34'}, Iberia.Passenger{nif='2342343', flightClass='business', seat='10'}]}, Iberia.Flight{number=23432555, origin='Londres', destination='Madrid', date=Thu Oct 28 02:00:00 CEST 2021, passengers=[Iberia.Passenger{nif='2342343', flightClass='tourist', seat='34'}, Iberia.Passenger{nif='2342343', flightClass='business', seat='10'}]}]}
+2021-10-12 21:57:28 INFO  Iberia.Main:31 - {
+	
+	"name": "Iberia",
+	"flights": [
+		{
+			"number": 23432543,
+			"origin": "Madrid",
+			"destination": "Londres",
+			"date": "2021-10-24",
+			"passengers": [
+				{
+					"nif": "2342343",
+					"flightClass": "tourist",
+					"seat": 34
+				},
+				{
+					"nif": "2342343",
+					"flightClass": "business",
+					"seat": 10
+				}
+			]
+		},
+		{
+			"number": 23432555,
+			"origin": "Londres",
+			"destination": "Madrid",
+			"date": "2021-10-28",
+			"passengers": [
+				{
+					"nif": "2342343",
+					"flightClass": "tourist",
+					"seat": 34
+				},
+				{
+					"nif": "2342343",
+					"flightClass": "business",
+					"seat": 10
+				}
+			]
+		}
+	] 
+}
+
+2021-10-12 21:57:28 INFO  Iberia.Main:33 - Iberia.Airline{name='Iberia', flights=[Iberia.Flight{number=23432543, origin='Madrid', destination='Londres', date=Sun Oct 24 02:00:00 CEST 2021, passengers=[Iberia.Passenger{nif='2342343', flightClass='tourist', seat='34'}, Iberia.Passenger{nif='2342343', flightClass='business', seat='10'}]}, Iberia.Flight{number=23432555, origin='Londres', destination='Madrid', date=Thu Oct 28 02:00:00 CEST 2021, passengers=[Iberia.Passenger{nif='2342343', flightClass='tourist', seat='34'}, Iberia.Passenger{nif='2342343', flightClass='business', seat='10'}]}]}
+2021-10-12 21:57:28 INFO  Iberia.Main:35 - Londres
+2021-10-12 22:00:15 INFO  Iberia.Main:31 - {
+	
+	"name": "Iberia",
+	"flights": [
+		{
+			"number": 23432543,
+			"origin": "Madrid",
+			"destination": "Londres",
+			"date": "2021-10-24",
+			"passengers": [
+				{
+					"nif": "2342343",
+					"flightClass": "tourist",
+					"seat": 34
+				},
+				{
+					"nif": "2342343",
+					"flightClass": "business",
+					"seat": 10
+				}
+			]
+		},
+		{
+			"number": 23432555,
+			"origin": "Londres",
+			"destination": "Madrid",
+			"date": "2021-10-28",
+			"passengers": [
+				{
+					"nif": "2342343",
+					"flightClass": "tourist",
+					"seat": 34
+				},
+				{
+					"nif": "2342343",
+					"flightClass": "business",
+					"seat": 10
+				}
+			]
+		}
+	] 
+}
+
+2021-10-12 22:00:15 INFO  Iberia.Main:33 - Iberia.Airline{name='Iberia', flights=[Iberia.Flight{number=23432543, origin='Madrid', destination='Londres', date=Sun Oct 24 02:00:00 CEST 2021, passengers=[Iberia.Passenger{nif='2342343', flightClass='tourist', seat='34'}, Iberia.Passenger{nif='2342343', flightClass='business', seat='10'}]}, Iberia.Flight{number=23432555, origin='Londres', destination='Madrid', date=Thu Oct 28 02:00:00 CEST 2021, passengers=[Iberia.Passenger{nif='2342343', flightClass='tourist', seat='34'}, Iberia.Passenger{nif='2342343', flightClass='business', seat='10'}]}]}
+2021-10-12 22:00:15 INFO  Iberia.Main:35 - Londres
+2021-10-25 11:01:23 INFO  Iberia.Main:31 - {
+  "name": "Iberia",
+  "flights": [
+    {
+      "number": 23432543,
+      "origin": "Madrid",
+      "destination": "Londres",
+      "date": "24/10/2021",
+      "passengers": [
+        {
+          "nif": "2342343",
+          "class": "tourist",
+          "seat": 34
+        },
+        {
+          "nif": "2342343",
+          "class": "business",
+          "seat": 10
+        }
+      ]
+    },
+    {
+      "number": 23432555,
+      "origin": "Londres",
+      "destination": "Madrid",
+      "date": "28/10/2021",
+      "passengers": [
+        {
+          "nif": "2342343",
+          "class": "tourist",
+          "seat": 34
+        },
+        {
+          "nif": "2342343",
+          "class": "business",
+          "seat": 10
+        }
+      ]
+    }
+  ]
+}
+
+2021-10-25 11:01:23 INFO  Iberia.Main:33 - Iberia.Airline{name='Iberia', flights=[Iberia.Flight{number=23432543, origin='Madrid', destination='Londres', date=Sun Oct 24 02:00:00 CEST 2021, passengers=[Iberia.Passenger{nif='2342343', flightClass='tourist', seat='34'}, Iberia.Passenger{nif='2342343', flightClass='business', seat='10'}]}, Iberia.Flight{number=23432555, origin='Londres', destination='Madrid', date=Thu Oct 28 02:00:00 CEST 2021, passengers=[Iberia.Passenger{nif='2342343', flightClass='tourist', seat='34'}, Iberia.Passenger{nif='2342343', flightClass='business', seat='10'}]}]}
+2021-10-25 11:01:23 INFO  Iberia.Main:35 - Londres
+2021-10-25 12:09:17 INFO  Main:33 - {
+  "name": "Iberia",
+  "flights": [
+    {
+      "number": 23432543,
+      "origin": "Madrid",
+      "destination": "Londres",
+      "date": "24/10/2021",
+      "passengers": [
+        {
+          "nif": "2342343",
+          "class": "tourist",
+          "seat": 34
+        },
+        {
+          "nif": "2342343",
+          "class": "business",
+          "seat": 10
+        }
+      ]
+    },
+    {
+      "number": 23432555,
+      "origin": "Londres",
+      "destination": "Madrid",
+      "date": "28/10/2021",
+      "passengers": [
+        {
+          "nif": "2342343",
+          "class": "tourist",
+          "seat": 34
+        },
+        {
+          "nif": "2342343",
+          "class": "business",
+          "seat": 10
+        }
+      ]
+    }
+  ]
+}
+
+2021-10-25 12:09:17 INFO  Main:35 - Iberia.Airline{name='Iberia', flights=[Iberia.Flight{number=23432543, origin='Madrid', destination='Londres', date=Sun Oct 24 02:00:00 CEST 2021, passengers=[Iberia.Passenger{nif='2342343', flightClass='tourist', seat='34'}, Iberia.Passenger{nif='2342343', flightClass='business', seat='10'}]}, Iberia.Flight{number=23432555, origin='Londres', destination='Madrid', date=Thu Oct 28 02:00:00 CEST 2021, passengers=[Iberia.Passenger{nif='2342343', flightClass='tourist', seat='34'}, Iberia.Passenger{nif='2342343', flightClass='business', seat='10'}]}]}
+2021-10-25 12:09:17 INFO  Main:37 - Londres
+2021-10-25 13:22:58 INFO  Main:33 - {
+  "name": "Iberia",
+  "flights": [
+    {
+      "number": 23432543,
+      "origin": "Madrid",
+      "destination": "Londres",
+      "date": "24/10/2021",
+      "passengers": [
+        {
+          "nif": "2342343",
+          "class": "tourist",
+          "seat": 34
+        },
+        {
+          "nif": "2342343",
+          "class": "business",
+          "seat": 10
+        }
+      ]
+    },
+    {
+      "number": 23432555,
+      "origin": "Londres",
+      "destination": "Madrid",
+      "date": "28/10/2021",
+      "passengers": [
+        {
+          "nif": "2342343",
+          "class": "tourist",
+          "seat": 34
+        },
+        {
+          "nif": "2342343",
+          "class": "business",
+          "seat": 10
+        }
+      ]
+    }
+  ]
+}
+
+2021-10-25 13:22:58 INFO  Main:35 - Iberia.Airline{name='Iberia', flights=[Iberia.Flight{number=23432543, origin='Madrid', destination='Londres', date=Sun Oct 24 02:00:00 CEST 2021, passengers=[Iberia.Passenger{nif='2342343', flightClass='tourist', seat='34'}, Iberia.Passenger{nif='2342343', flightClass='business', seat='10'}]}, Iberia.Flight{number=23432555, origin='Londres', destination='Madrid', date=Thu Oct 28 02:00:00 CEST 2021, passengers=[Iberia.Passenger{nif='2342343', flightClass='tourist', seat='34'}, Iberia.Passenger{nif='2342343', flightClass='business', seat='10'}]}]}
+2021-10-25 13:22:58 INFO  Main:37 - Londres
+2021-10-25 13:23:39 INFO  Main:22 - Iberia.Airline{name='Iberia', flights=[Iberia.Flight{number=23432543, origin='Madrid', destination='Londres', date=Sun Oct 24 02:00:00 CEST 2021, passengers=[Iberia.Passenger{nif='2342343', flightClass='tourist', seat='34'}, Iberia.Passenger{nif='2342343', flightClass='business', seat='10'}]}, Iberia.Flight{number=23432555, origin='Londres', destination='Madrid', date=Thu Oct 28 02:00:00 CEST 2021, passengers=[Iberia.Passenger{nif='2342343', flightClass='tourist', seat='34'}, Iberia.Passenger{nif='2342343', flightClass='business', seat='10'}]}]}
+2021-10-25 13:23:39 INFO  Main:24 - Iberia.Airline{name='Iberia', flights=[Iberia.Flight{number=23432543, origin='Madrid', destination='Londres', date=Sun Oct 24 02:00:00 CEST 2021, passengers=[Iberia.Passenger{nif='2342343', flightClass='tourist', seat='34'}, Iberia.Passenger{nif='2342343', flightClass='business', seat='10'}]}, Iberia.Flight{number=23432555, origin='Londres', destination='Madrid', date=Thu Oct 28 02:00:00 CEST 2021, passengers=[Iberia.Passenger{nif='2342343', flightClass='tourist', seat='34'}, Iberia.Passenger{nif='2342343', flightClass='business', seat='10'}]}]}
+2021-10-25 13:23:39 INFO  Main:26 - Londres
+2021-10-25 13:24:35 INFO  Main:33 - {
+  "name": "Iberia",
+  "flights": [
+    {
+      "number": 23432543,
+      "origin": "Madrid",
+      "destination": "Londres",
+      "date": "24/10/2021",
+      "passengers": [
+        {
+          "nif": "2342343",
+          "class": "tourist",
+          "seat": 34
+        },
+        {
+          "nif": "2342343",
+          "class": "business",
+          "seat": 10
+        }
+      ]
+    },
+    {
+      "number": 23432555,
+      "origin": "Londres",
+      "destination": "Madrid",
+      "date": "28/10/2021",
+      "passengers": [
+        {
+          "nif": "2342343",
+          "class": "tourist",
+          "seat": 34
+        },
+        {
+          "nif": "2342343",
+          "class": "business",
+          "seat": 10
+        }
+      ]
+    }
+  ]
+}
+
+2021-10-25 13:24:35 INFO  Main:35 - Iberia.Airline{name='Iberia', flights=[Iberia.Flight{number=23432543, origin='Madrid', destination='Londres', date=Sun Oct 24 02:00:00 CEST 2021, passengers=[Iberia.Passenger{nif='2342343', flightClass='tourist', seat='34'}, Iberia.Passenger{nif='2342343', flightClass='business', seat='10'}]}, Iberia.Flight{number=23432555, origin='Londres', destination='Madrid', date=Thu Oct 28 02:00:00 CEST 2021, passengers=[Iberia.Passenger{nif='2342343', flightClass='tourist', seat='34'}, Iberia.Passenger{nif='2342343', flightClass='business', seat='10'}]}]}
+2021-10-25 13:24:35 INFO  Main:37 - Londres
+2021-10-25 13:35:10 INFO  Main:33 - {
+  "name": "Iberia",
+  "flights": [
+    {
+      "number": 23432543,
+      "origin": "Madrid",
+      "destination": "Londres",
+      "date": "24/10/2021",
+      "passengers": [
+        {
+          "nif": "2342343",
+          "class": "tourist",
+          "seat": 34
+        },
+        {
+          "nif": "2342343",
+          "class": "business",
+          "seat": 10
+        }
+      ]
+    },
+    {
+      "number": 23432555,
+      "origin": "Londres",
+      "destination": "Madrid",
+      "date": "28/10/2021",
+      "passengers": [
+        {
+          "nif": "2342343",
+          "class": "tourist",
+          "seat": 34
+        },
+        {
+          "nif": "2342343",
+          "class": "business",
+          "seat": 10
+        }
+      ]
+    }
+  ]
+}
+
+2021-10-25 13:35:10 INFO  Main:42 - Iberia.Airline{name='Iberia', flights=[Iberia.Flight{number=23432543, origin='Madrid', destination='Londres', date=Sun Oct 24 02:00:00 CEST 2021, passengers=[Iberia.Passenger{nif='2342343', flightClass='tourist', seat='34'}, Iberia.Passenger{nif='2342343', flightClass='business', seat='10'}]}, Iberia.Flight{number=23432555, origin='Londres', destination='Madrid', date=Thu Oct 28 02:00:00 CEST 2021, passengers=[Iberia.Passenger{nif='2342343', flightClass='tourist', seat='34'}, Iberia.Passenger{nif='2342343', flightClass='business', seat='10'}]}]}
+2021-10-25 13:35:10 INFO  Main:44 - Londres
+2021-10-25 13:37:44 INFO  Main:33 - {
+  "name": "Iberia",
+  "flights": [
+    {
+      "number": 23432543,
+      "origin": "Madrid",
+      "destination": "Londres",
+      "date": "24/10/2021",
+      "passengers": [
+        {
+          "nif": "2342343",
+          "class": "tourist",
+          "seat": 34
+        },
+        {
+          "nif": "2342343",
+          "class": "business",
+          "seat": 10
+        }
+      ]
+    },
+    {
+      "number": 23432555,
+      "origin": "Londres",
+      "destination": "Madrid",
+      "date": "28/10/2021",
+      "passengers": [
+        {
+          "nif": "2342343",
+          "class": "tourist",
+          "seat": 34
+        },
+        {
+          "nif": "2342343",
+          "class": "business",
+          "seat": 10
+        }
+      ]
+    }
+  ]
+}
+
+2021-10-25 13:37:44 INFO  Main:46 - Iberia.Airline{name='Iberia', flights=[Iberia.Flight{number=23432543, origin='Madrid', destination='Londres', date=Sun Oct 24 02:00:00 CEST 2021, passengers=[Iberia.Passenger{nif='2342343', flightClass='tourist', seat='34'}, Iberia.Passenger{nif='2342343', flightClass='business', seat='10'}]}, Iberia.Flight{number=23432555, origin='Londres', destination='Madrid', date=Thu Oct 28 02:00:00 CEST 2021, passengers=[Iberia.Passenger{nif='2342343', flightClass='tourist', seat='34'}, Iberia.Passenger{nif='2342343', flightClass='business', seat='10'}]}]}
+2021-10-25 13:37:44 INFO  Main:48 - Londres

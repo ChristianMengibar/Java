@@ -1,0 +1,5 @@
+2021-10-25 13:28:51 main INFO  Main:20 - El numero de pedidos es : 1
+2021-10-25 13:29:23 main INFO  Main:20 - El numero de pedidos es : 2
+2021-11-22 18:54:59 main INFO  Main:24 - El numero de pedido es: 1
+2021-11-22 18:54:59 main INFO  Main:27 - El numero de pedido es: Mi tienda de juegos
+2021-11-22 18:54:59 main INFO  Main:30 - El numero de pedido es: Stock{productId=101, price=100.5, name='Warcraft', genre=[Videojuego, Estrategia]}
